@@ -88,6 +88,9 @@ No suspicious activity detected.
 ---
 
 ## 📸 Screenshots
-![DNS](<img width="1635" height="875" alt="image" src="https://github.com/user-attachments/assets/cd8241e1-00bb-461c-831d-3d6ef058e7b4" />)
-![HTTP](<img width="1631" height="874" alt="http" src="https://github.com/user-attachments/assets/b71e4c14-306b-4fec-a94e-007264d98c05" />)
-![TLS](<img width="1632" height="867" alt="tls" src="https://github.com/user-attachments/assets/c8ebf1c9-3c4f-49cb-8571-51e9d7576195" />)
+![DNS](<img width="1635" height="875" alt="image" src="https://github.com/user-attachments/assets/cd8241e1-00bb-461c-831d-3d6ef058e7b4" />
+)
+![HTTP](<img width="1631" height="874" alt="http" src="https://github.com/user-attachments/assets/b71e4c14-306b-4fec-a94e-007264d98c05" />
+)
+![TLS](<img width="1632" height="867" alt="tls" src="https://github.com/user-attachments/assets/c8ebf1c9-3c4f-49cb-8571-51e9d7576195" />
+)
