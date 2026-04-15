@@ -1,93 +1,126 @@
-🧪 Network Analysis: Ping & DNS
+# 🧪 Анализ сети: Ping и DNS
 
-📌 Objective
-Analyze basic network connectivity and DNS resolution.
+## 📌 Цель
 
-## 🔍 Steps
+Анализ базового сетевого подключения и работы DNS.
 
-### 1. Ping Test
-Command:
-ping google.com
+---
 
-Purpose:
-Check connectivity and latency.
+## 🔍 Шаги
 
-### 2. DNS Lookup
-Command:
-nslookup google.com
+### 1. Проверка соединения (Ping)
 
-Purpose:
-Resolve domain name to IP addresses.
+**Команда:**
+`ping google.com`
 
-## 📊 Results
+**Цель:**
+Проверка доступности сети и задержки.
+
+---
+
+### 2. DNS-запрос
+
+**Команда:**
+`nslookup google.com`
+
+**Цель:**
+Определение IP-адресов домена.
+
+---
+
+## 📊 Результаты
 
 ### Ping
-- 0% packet loss
-- Average latency ~0.3–0.4 ms
-- Stable connection
+
+* Потери пакетов: 0%
+* Средняя задержка: ~0.3–0.4 мс
+* Соединение стабильное
+
+---
 
 ### DNS
-- DNS server: 1.1.1.1
-- Multiple IP addresses returned
-- IPv4 and IPv6 present
+
+* DNS-сервер: 1.1.1.1
+* Получено несколько IP-адресов
+* Присутствуют IPv4 и IPv6
 
 ---
 
-## 🧠 Conclusion
-The network connection is stable and DNS resolution works correctly.  
-Multiple IP addresses indicate load balancing.
+## 🧠 Вывод
+
+Сетевое соединение работает стабильно, DNS-разрешение выполняется корректно.
+Наличие нескольких IP-адресов указывает на балансировку нагрузки.
 
 ---
 
-## 📸 Screenshots
+## 📸 Скриншоты
 
-<img width="1276" height="871" alt="Screenshot_6" src="https://github.com/user-attachments/assets/e4e4f504-0eef-4def-8387-f5014928a481" />
+<img width="1276" height="871" alt="Screenshot_6" src="https://github.com/user-attachments/assets/2f04a8ff-df6b-4a07-a70b-ea8c0df6080d" />
 
----
-
-# 🧪 Project 2: Traffic Analysis (Wireshark)
-
-## 📌 Objective
-Capture and analyze real network traffic.
 
 ---
 
-## 🔍 Steps
-- Started Wireshark on eth0
-- Generated traffic via browser
-- Applied filters: dns, http, tls
+# 🧪 Проект 2: Анализ сетевого трафика (Wireshark)
+
+## 📌 Цель
+
+Захват и анализ реального сетевого трафика.
 
 ---
 
-## 📊 Findings
+## 🔍 Шаги
+
+* Запущен Wireshark на интерфейсе `eth0`
+* Сгенерирован трафик через браузер
+* Применены фильтры: `dns`, `http`, `tls`
+
+---
+
+## 📊 Результаты
 
 ### DNS
-- Observed queries to:
-  - google-analytics.com
-  - consent.cookiebot.com
-- Indicates background services (tracking, cookies)
+
+Обнаружены запросы к доменам:
+
+* `google-analytics.com`
+* `consent.cookiebot.com`
+
+👉 Это фоновые сервисы (аналитика, cookies)
 
 ---
 
 ### HTTP / OCSP
-- Observed OCSP requests
-- Used for certificate validation
+
+* Зафиксированы OCSP-запросы
+* Используются для проверки сертификатов
 
 ---
 
 ### TLS
-- Majority of traffic is encrypted
-- TLSv1.3 Application Data packets detected
+
+* Основной трафик зашифрован
+* Обнаружены пакеты TLSv1.3 (Application Data)
 
 ---
 
-## 🧠 Conclusion
-Network traffic consists of DNS resolution, certificate validation (OCSP), and encrypted HTTPS communication.  
-No suspicious activity detected.
+## 🧠 Вывод
+
+Сетевой трафик включает:
+
+* DNS-запросы
+* проверку сертификатов (OCSP)
+* зашифрованное HTTPS-соединение
+
+Подозрительной активности не обнаружено.
 
 ---
 
-## 📸 Screenshots
+## 📸 Скриншоты
+
 <img width="1635" height="875" alt="image" src="https://github.com/user-attachments/assets/cd8241e1-00bb-461c-831d-3d6ef058e7b4" />
 <img width="1631" height="874" alt="http" src="https://github.com/user-attachments/assets/b71e4c14-306b-4fec-a94e-007264d98c05" />
 <img width="1632" height="867" alt="tls" src="https://github.com/user-attachments/assets/c8ebf1c9-3c4f-49cb-8571-51e9d7576195" />
+
+
+---
+
